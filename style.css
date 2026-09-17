@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+header {
+    color: white;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    flex-grow: 1;
+    padding-inline: 10%;
+}
+
+.galeria {
+    height: 100%;
+    width: 100%;
+}
+
+.galeria img {
+    width: 33%;
+    height: 240px;
+    padding: 6px;
+    filter: grayscale();
+    transition: 1.5s;
+}
+
+.galeria img:hover {
+    filter: none;
+    transform: perspective(650px) rotate(360deg);
+}
+
+footer {
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-weight: bold;
+}
